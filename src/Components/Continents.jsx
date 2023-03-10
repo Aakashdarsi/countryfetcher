@@ -54,8 +54,8 @@ export default class Continents extends Component {
         {/* <button className="btn btn-primary my-2" onClick={this.buttonCLick}>Test</button> */}
         {this.state.loading?<Loading/>: <div className="container">
           <div className="row">
-          {this.state.fetched_data.map((element,index)=><div className="col-4" key={index}>
-        <Card country = {element.name} flag = {element.flag}  nativeName = {element.nativeName} capital = {element.capital} currency = {element.currencies[0].name} currencySymbol = {element.currencies[0].symbol} officialLanguage = {element.languages[0].nativeName} population = {element.population}/>
+          {this.state.fetched_data.map((element,index)=><div className="col-md-4 col-sm-12" key={index}>
+        <Card country = {element.name} flag = {element.flag}  nativeName = {element.nativeName} capital = {element.capital} currency = {element.currencies[0].name} currencySymbol = {element.currencies[0].symbol} officialLanguage = {element.languages[0].nativeName} population = {element.population} Language = {element.languages[0].name} callingCode = {element.callingCodes[0]}/>
           </div>)}
           </div>
         </div>}
