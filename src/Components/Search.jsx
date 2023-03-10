@@ -25,7 +25,8 @@ export default class Search extends Component {
   {
     try
     {
-      let url = `https://restcountries.com/v2/name/${this.state.country}?fullText=true`
+      let url = `https://restcountries.com/v2/name/${this.state.country}`
+      
     console.log(url)
     let fetch_data = await fetch(url)
     console.log(fetch_data)
